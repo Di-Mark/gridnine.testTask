@@ -1,11 +1,7 @@
 package com.gridnine.testing;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 class Segment {
     private final LocalDateTime departureDate;
 
