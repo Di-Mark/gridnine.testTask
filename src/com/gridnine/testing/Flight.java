@@ -1,6 +1,8 @@
 package com.gridnine.testing;
+
 import java.util.List;
 import java.util.stream.Collectors;
+
 class Flight {
     private final List<Segment> segments;
 

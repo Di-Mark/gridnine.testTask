@@ -5,10 +5,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FilterImp implements Filter{
+public class FilterImp implements Filter {
     @Override
     public List<Flight> filterDepartureBeforeTheCurrentTime(List<Flight> flights) {
-        return  flights.stream()
+        return flights.stream()
                 .filter(flight -> flight.getSegments().stream()
                         .anyMatch(segment -> !segment.getDepartureDate()
                                 .isBefore(LocalDateTime.now())))
